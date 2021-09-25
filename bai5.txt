@@ -1,0 +1,12 @@
+Các lệnh git đã học là
++ git init  được sử dưng để tạo, khởi tạo một kho chứa Git mới (Git Repo) ở local Khi đang trong thư mục dự án chạy lệnh git init nó sẽ tạo ra một thư mục con (ẩn) tên .git, thư mục này chứa tất cả thông tin mô tả cho kho chứa dự án (Repo) mới - những thông tin này gọi là metadata gồm các thư mục như objects, refs ... 
+  Có một file tên HEAD cũng được tạo ra - nó trỏ đến commit hiện tại.
++ git add . sử dụng để đánh chỉ mục (index) các nội dung mới, mới cập nhật trong thư mục làm việc, nó chuẩn bị nội dung sắp xếp cho lần commit tiếp theo.
+Có thể thực hiện lệnh git add nhiều lần để tạo tạo ra một snapshot cuối cùng trước khi thực hiện commit.
++ git status  Để check trạng thái của những file bạn đã thay đổi trong thư mục làm việc.
++ git commit -m “first commit” commit nghĩa là một action để Git lưu lại một snapshot của các sự thay đổi trong thư mục làm việc
+.Và các tập tin, thư mục được thay đổi đã phải nằm trong Staging Area. Mỗi lần commit nó sẽ được lưu lại lịch sử chỉnh sửa của code kèm theo tên và địa chỉ email của người commit
++ git remote cho phép bạn tạo, xem và xóa kết nối giữa các Repo. Những kết nối chứa thông tin địa chỉ đến kho chứa khác, nó có một cái tên để sử dụng khi cần thiết.
++ git clone Lệnh này sẽ sao chép toàn bộ dữ liệu trên repository và sao chép luôn các thiết lập về repository, tức là nó sẽ tự động tạo một master branch trên máy tính của bạn. Lệnh này chỉ nên sử dụng khi bạn cần tạo mới một Git mới trên máy tính với toàn bộ dữ liệu và thiết lập của một remote repository.
++ git pull Lệnh này sẽ tự động lấy toàn bộ dữ liệu từ remote repository và gộp vào cái branch hiện tại bạn đang làm việc.
++ git push -u origin master được sử dụng để đẩy nội dung cục bộ lên GitHub. Trong mã, nguồn gốc là tên kho lưu trữ từ xa mặc định của bạn và cờ '-u' là ngược dòng, tương đương với '-set-ngược dòng. 'và chủ là chi nhánh, tên. ngược dòng là kho lưu trữ mà chúng tôi đã nhân bản dự án
